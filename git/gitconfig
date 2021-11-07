@@ -1,0 +1,10 @@
+[user]
+  name = Amit Bangarwa
+  email = amit.bangarwa@gmail.com
+[push]
+  default = current
+  autocrlf = input
+[color]
+	ui = true
+[pull]
+   ff = only
