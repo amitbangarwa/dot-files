@@ -94,11 +94,15 @@ source $ZSH/oh-my-zsh.sh
 # fi
 
 # git aliases
+alias gp='git pull --prune'
+alias gl="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
+alias gpu='git push origin HEAD'
+
+# Remove `+` and `-` from start of diff lines; just rely upon color.
+alias gd='git diff --color | sed "s/^\([^-+ ]*\)[-+ ]/\\1/" | less -r'
+
 alias gc="git clone"
-alias gp="git pull"
-alias gpu="git push"
-alias gca="git commit"
-alias gl="git log"
+alias gca="git commit -a && git commit -m"
 alias gs="git switch"
 alias gm="git merge"
 alias gst="git status"
