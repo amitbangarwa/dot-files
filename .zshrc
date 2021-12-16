@@ -93,6 +93,16 @@ source $ZSH/oh-my-zsh.sh
 #   export EDITOR='mvim'
 # fi
 
+# git aliases
+alias gc="git clone"
+alias gp="git pull"
+alias gpu="git push"
+alias gca="git commit"
+alias gl="git log"
+alias gs="git switch"
+alias gm="git merge"
+alias gst="git status"
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
